@@ -1,0 +1,12 @@
+set-option global scrolloff 1,5
+add-highlighter global/ number-lines -relative
+add-highlighter global/ wrap -word -indent
+
+# enable kakoune-lsp
+eval %sh{kak-lsp --kakoune -s $kak_session} 
+hook global WinSetOption filetype=(rust|go|javascript|typescript|c) %{
+    lsp-enable-window
+}
+
+lsp-inlay-hints-enable global
+
