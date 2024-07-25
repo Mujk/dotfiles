@@ -1,4 +1,4 @@
-colorscheme palenight
+colorscheme catppuccin_macchiato
 
 set-option global scrolloff 5,1
 add-highlighter global/ number-lines -relative
@@ -19,6 +19,9 @@ eval %sh{kak-lsp --kakoune -s $kak_session}
 hook global WinSetOption filetype=(rust|go|javascript|typescript|c) %{
     lsp-enable-window
 }
+
+# enable kakoune tree-sitter
+eval %sh{ kak-tree-sitter -dks --init $kak_session }
 
 lsp-inlay-diagnostics-enable global
 lsp-inlay-hints-enable global
