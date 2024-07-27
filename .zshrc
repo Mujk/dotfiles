@@ -11,6 +11,7 @@ alias gtpr='cd ~/DATA/projects/' ## pr = PRoject
 alias gtaa='cd ~/DATA/areas/' ## aa = AreA
 alias gtre='cd ~/DATA/resources/' ## re = REsource
 alias gtae='cd ~/DATA/archieve/' ## ae = ArchievE
+alias gttr='cd ~/trash/' ## tr = trash
 
 # s = show
 alias si='cat ~/DATA/areas/inbox.md' ## i = inbox
@@ -25,6 +26,7 @@ alias ls='ls --color=auto'
 alias k='kak'
 alias cl='clear'
 alias clinbox='echo "" > ~/DATA/areas/inbox.txt' # clear inbox
+alias cltrash='rm -rf ~/trash/ && mkdir ~/trash' # clear trash
 
 # other functions
 f() {
@@ -45,6 +47,10 @@ pow() {
     power=$(cat /sys/class/power_supply/BAT0/capacity)
     power_status=$(cat /sys/class/power_supply/BAT0/status)
     echo $power' '$power_status
+}
+
+tr() {
+    mv $1 ~/trash/$1
 }
 
 # disable dir hightlighting on WSL
