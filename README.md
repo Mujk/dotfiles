@@ -10,7 +10,7 @@ Files managed by GNU Stow
 
 [catppuccin_macchiato from kakoune-tree-sitter-themes](https://git.sr.ht/~hadronized/kakoune-tree-sitter-themes) needs to be in kak/colors
 
-## starw.sh
+## startw.sh
 
 [dwl](https://codeberg.org/dwl/dwl) needs to be installed
 
