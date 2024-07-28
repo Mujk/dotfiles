@@ -27,6 +27,7 @@ alias k='kak'
 alias cl='clear'
 alias clinbox='echo "" > ~/DATA/areas/inbox.txt' # clear inbox
 alias cltrash='rm -rf ~/trash/ && mkdir ~/trash' # clear trash
+alias startw='zsh ~/scripts/startw.sh'
 
 # other functions
 f() {

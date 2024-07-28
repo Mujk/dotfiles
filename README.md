@@ -9,3 +9,9 @@ Files managed by GNU Stow
 [kak-tree-sitter](https://git.sr.ht/~hadronized/kak-tree-sitter) needs to be installed
 
 [catppuccin_macchiato from kakoune-tree-sitter-themes](https://git.sr.ht/~hadronized/kakoune-tree-sitter-themes) needs to be in kak/colors
+
+## starw.sh
+
+[dwl](https://codeberg.org/dwl/dwl) needs to be installed
+
+[dwlb](https://github.com/kolunmi/dwlb) needs to be installed
